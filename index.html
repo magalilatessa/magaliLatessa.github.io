@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- fonr awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<header>
+      <a href="#" class="brand">
+      	<!-- <img class="imagenMia" src="yo.jpg">-->
+      </a>
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <ul>
+        	<li><a href="#">Home</a></li>
+        	<li><a href="#acercadeMi">Acerca de mi</a></li>
+          <li><a href="#disenio-grafico">Diseño gráfico</a></li>
+        	<li><a href="#programacion">Programación</a></li>
+        		<!--<li><a href="#contacto">Contacto</a></li>-->
+        </ul>
+      </nav>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+    <section class="section-main">
+      <h1>Magali Latessa</h1>
+    </section>
+
+    <section id="acercadeMi"class="section">
+      <h2>Acerca de mi</h2>
+      <div>
+        <img class="imagenMia" src="yo.jpg" style="width: 20%; float:left"> 
+        <p style="font-size:larger;padding-top: 30px;">¡Hola! Soy Magalí, una apasionada diseñadora gráfica y programadora. 
+          Mi experiencia en ambos campos me ha permitido combinar la creatividad del diseño 
+          con la precisión y la lógica de la programación para crear soluciones únicas y efectivas. 
+          Me enorgullece haber trabajado en proyectos emocionantes, 
+          donde he podido diseñar interfaces atractivas y funcionales, 
+          mientras desarrollo aplicaciones y sitios web con un enfoque en la usabilidad y 
+          la experiencia del usuario. Mi objetivo es seguir creciendo profesionalmente, 
+          aprendiendo nuevas tecnologías y ampliando mi cartera de proyectos, 
+          siempre buscando nuevas formas de combinar el diseño y la programación 
+          para crear experiencias memorables y impactantes.</p> <!-- esto es lo que quiero que vaya a la derecha -->
+      </div>
+
+    </section>
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('down', window.scrollY > 0);
+
+	    //change logo
+	    var logo = document.querySelector(".brand img");
+		if (window.scrollY>0) {
+			logo.setAttribute('src', 'image/white.png');
+		}else{
+			logo.setAttribute('src', 'image/blue.png');
+		}
+
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+
+    <section  id="disenio-grafico"class="section">
+        <h2 >Diseño gráfico</h2>
+        <p style="font-size:medium">
+          He realizado varios proyectos de diseño. Como diseño de logos, posteos, historias, portadas,
+        curiculums, portfolios e identidades de marcas completas.   </p>
+        <p>A continuación te dejo unos ejemplos de proyectos en los que trabaje</p> 
+        <div class="cards">
+          <div class="card">
+            <div class="card__image-holder">
+              <img class="card__image" src="arteEnMacrame.png" alt="arteEnMacreame" />
+  
+            </div>
+            <div class="card-title">
+                <span class="left"></span>
+                <span class="right"></span>
+
+                <h2>
+                  Arte en macrame
+              </h2>
+            </div>
+            <div class="card-flap flap1">
+              <div class="card-description">
+                Este proyecto fue creado para un negocio de macrame. 
+                La clienta necesitaba un logo que identificara la marca y este fue perfecto♡
+              </div>
+              <div class="card-flap flap2">
+                <div class="card-actions">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card__image-holder">
+              <img class="card__image" src="Apicultura.png" alt="apicultura" />
+            </div>
+            <div class="card-title">
+                <span class="left"></span>
+                <span class="right"></span>
+              <h2>
+                  Apicultura Gonzalez
+              </h2>
+            </div>
+            <div class="card-flap flap1">
+              <div class="card-description">
+                Este logo fue creado para una empresa de apicultura. 
+                El color amarillo representa 
+                totalmente a las abejas 𓆤 y el diseño les encanto.
+              </div>
+              <div class="card-flap flap2">
+                <div class="card-actions">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card__image-holder">
+              <img class="card__image" src="clic.png" alt="clic" />
+            </div>
+            <div class="card-title">
+                <span class="left"></span>
+                <span class="right"></span>
+              <h2>
+                  Clic Accesorios
+              </h2>
+            </div>
+            <div class="card-flap flap1">
+              <div class="card-description">
+                  Este proyecto fue para una nueva identidad de un emprendimiento.
+                  Donde la clienta queria algo bien minimalista y delicado.
+              </div>
+              <div class="card-flap flap2">
+                <div class="card-actions">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card__image-holder">
+              <img class="card__image" src="CZ.png" alt="cz" />
+            </div>
+            <div class="card-title">
+                <span class="left"></span>
+                <span class="right"></span>
+              <h2>
+                  CZ digital
+              </h2>
+            </div>
+            <div class="card-flap flap1">
+              <div class="card-description">
+                 Este logo fue creado para una clienta Community mannager.
+                 Con la cual trabajamos en diversos proyectos juntas.
+              </div>
+              <div class="card-flap flap2">
+                <div class="card-actions">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card__image-holder">
+              <img class="card__image" src="Alzira.png" alt="Alzira" />
+            </div>
+            <div class="card-title">
+                <span class="left"></span>
+                <span class="right"></span>
+              <h2>
+                  Alzira
+              </h2>
+            </div>
+            <div class="card-flap flap1">
+              <div class="card-description">
+                Alzira es una marca de ropa. Donde la clienta 
+                nos pidio, exclusivamente, un diseño sin ilustraciones
+                 pero que resalte entre las demás.
+              </div>
+              <div class="card-flap flap2">
+                <div class="card-actions">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card__image-holder">
+              <img class="card__image" src="zada.png" alt="zada" />
+            </div>
+            <div class="card-title">
+                <span class="left"></span>
+                <span class="right"></span>
+
+              <h2>
+                  Zada
+              </h2>
+            </div>
+            <div class="card-flap flap1">
+              <div class="card-description">
+                En este proyecto realice una actualización de 
+                imagen de marca para un negocio de decoración de interiores.
+                Diseñe un logo minimalista y delicado. 
+              </div>
+              <div class="card-flap flap2">
+                <div class="card-actions">
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+    <section id="programacion"class="section">
+      <h2>Lenguajes de programación</h2>
+      <div class="w3-container">
+        <p>Estos son los lenguajes de programación que manejo</p>
+        <p></p>
+        <h2 style="font-size:large;">⇝Java</h2>
+        <div class="w3-light-grey">
+          <div  style="height:24px;width:80%;background-color:lightpink"></div>
+        </div><br>
+        <h2 style="font-size:large;">⇝Pascal/Delphi</h2>
+        <div class="w3-light-grey">
+          <div style="height:24px;width:100%;background-color:lightpink"></div>
+        </div><br>
+        <h2 style="font-size:large;">⇝GIT</h2>
+        <div class="w3-light-grey">
+          <div  style="height:24px;width:60%;background-color:lightpink"></div>
+        </div>
+        <h2 style="font-size:large;">⇝HTML</h2>
+        <div class="w3-light-grey">
+          <div  style="height:24px;width:70%;background-color:lightpink"></div>
+        </div>
+        <h2 style="font-size:large;">⇝CSS</h2>
+        <div class="w3-light-grey">
+          <div  style="height:24px;width:50%;background-color:lightpink"></div>
+        </div>
+      </section>
+      
+      <section id="contacto" class="section"class="sectionForm">
+      
+      </section>
+</body>
+</html>
